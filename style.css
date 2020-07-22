@@ -1,0 +1,69 @@
+body {
+  background: #efefef;
+}
+
+header {
+  background: #fff;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+header img {
+  height: 50px;
+}
+
+.wrapper {
+  width: 750px;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a:not(:last-child) {
+  margin-right: 15px;
+}
+
+main.wrapper {
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  margin: 20px auto;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+main > form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+form > .control {
+  width: calc(50% - 10px);
+}
+
+.control:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.control:nth-child(even) {
+  margin-left: 10px;
+}
+
+.control > button[type="submit"] {
+  margin-bottom: 15px;
+}
+
+.notification {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 15px;
+}

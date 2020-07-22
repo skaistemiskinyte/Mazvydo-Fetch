@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a href="/">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            alt="Google Logo"
+          />
+        </a>
+
+        <nav>
+          <a href="index.html">View</a>
+          <a href="#">Add</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <h1>Add Book</h1>
+
+      <div class="notification" style="display: none;"></div>
+
+      <form name="add">
+        <div class="control">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="Petras Slekys"
+          />
+        </div>
+
+        <div class="control">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" placeholder="Front-end" />
+        </div>
+
+        <div class="control">
+          <label for="validation">
+            How much is <span id="captcha"></span>?
+          </label>
+          <input
+            type="number"
+            name="validation"
+            id="validation"
+            placeholder="2 + 2 = "
+          />
+        </div>
+
+        <div class="control">
+          <button type="submit">Add Book</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
